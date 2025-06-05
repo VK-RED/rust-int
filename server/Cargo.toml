@@ -1,0 +1,14 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.11.0"
+argon2 = {version = "0.5.3", features = ["std"]}
+store = {path = "../store"}
+jsonwebtoken = "9"
+serde = {version = "1.0.219", features = ["derive"]}
+serde_json = "1.0.140"
+chrono = "0.4.41"
+derive_more = "2.0.1"
